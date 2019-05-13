@@ -3,7 +3,7 @@ import os
 from os.path import basename, splitext
 from datetime import datetime
 
-outDirectory = "C:/Users/david.pillant/Documents/Bibliothèque/Telechargement Code prog/"
+outDirectory = "C:/Users/david.pillant/Downloads/rar/"
 inDirectory= "C:/Users/david.pillant/Documents/Bibliothèque/Telechargement Code prog/"
 programName="Sorting files"
 
@@ -11,8 +11,11 @@ filterFile = ["*.rar","*.zip","*.epub","*.pdf"]
 
 mainKeywordList = [["java","java"],
                    ["java","clean-code"],
+                   ["spring","spring"],
                    ["python","python"],
                    ["design-pattern","design-pattern"],
+                   ["design-pattern","object-oriented"],
+                   ["natural-language","natural-language"],
                    ["excel","excel"],
                    ["excel","tableau"],
                    ["ruby","ruby"],
@@ -53,8 +56,10 @@ mainKeywordList = [["java","java"],
                    ["iot","internet-things"],
                    ["iot","iot"],
                    ["security","security"],
-                   ["cracking","security"],
-                   ["cyber","security"],
+                   ["security","malware"],
+                   ["security","securing"],
+                   ["security","cracking"],
+                   ["security","cyber"],
                    ["architecture","architecture"],
                    ["architecture","design"],
                    ["adobe","illustrator"],
@@ -75,6 +80,8 @@ mainKeywordList = [["java","java"],
                    ["blockchain","ethereum"],
                    ["data-science","data-science"],
                    ["mobile","flutter"],
+                   ["keras","keras"],
+                   ["matpotlib","matpotlib"],
                    ["divers","*"]
                    ]
 
@@ -83,7 +90,15 @@ def organizeFile(file,repository):
         os.makedirs(inDirectory+repository)
     destination = inDirectory+repository+"/"+file
     source = outDirectory+file
-    os.rename(source,destination)
+    try:
+        os.rename(source,destination)
+    except:
+        try:
+            os.remove(source)
+            print("{} deleted!".format(source))
+        except (OSError, IOError):
+            pass
+
 
 def start(programName):
     print("*********Start {}****************".format(programName))
