@@ -85,7 +85,7 @@ mainKeywordList = [["java","java"],
                    ["divers","*"]
                    ]
 
-def organizeFile(file,repository):
+def organize_file(file,repository):
     if not (os.path.exists(inDirectory+repository)):
         os.makedirs(inDirectory+repository)
     destination = inDirectory+repository+"/"+file
@@ -100,18 +100,18 @@ def organizeFile(file,repository):
             pass
 
 
-def start(programName):
-    print("*********Start {}****************".format(programName))
+def start(program_name):
+    print("*********Start {}****************".format(program_name))
     now = datetime.now()
     print("Start at {}".format(now))
     return now
 
-def end(programName,start):
+def end(program_name,start):
     end=datetime.now()
     duration=start - end
     print("End at {}".format(end))
-    print("Durattion {} second(s)".format(duration.seconds))
-    print("*********End {}****************".format(programName))
+    print("Duration {} second(s)".format(duration.seconds))
+    print("*********End {}****************".format(program_name))
 
 debut = start(programName)
 fileCountManaged = 0
@@ -122,7 +122,7 @@ for filter in filterFile:
         for mainKeyword in mainKeywordList:
             if (mainKeyword[1] in file[0] or mainKeyword == mainKeywordList[-1]):
                 fileCountManaged = fileCountManaged + 1
-                organizeFile(file[0]+file[1],mainKeyword[0])
+                organize_file(file[0]+file[1],mainKeyword[0])
                 break
 
 print(str(fileCountManaged) + " file(s) moved!")
