@@ -81,7 +81,11 @@ mainKeywordList = [["java","java"],
                    ["data-science","data-science"],
                    ["mobile","flutter"],
                    ["keras","keras"],
-                   ["matpotlib","matpotlib"],
+                   ["matplotlib","matplotlib"],
+                   ["odoo","odoo"],
+                   ["data-mining","data-mining"],
+                   ["agilite","agile"],
+                   ["camel","camel"],
                    ["divers","*"]
                    ]
 
