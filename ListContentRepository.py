@@ -8,6 +8,37 @@ from datetime import datetime
 outDirectory = "C:/Users/david.pillant/Downloads/rar/"
 inDirectory= "E:/Bibliotheque/"
 programName="Sorting files"
+
+
+filterFile = ["*.rar","*.zip","*.epub","*.pdf"]
+mainKeywordList = [["3d-graphics","3d-graphics"],
+                   ["adobe","adobe"],
+                   ["adobe","illustrator"],
+                   ["adobe","photoshop"],
+                   ["agilite","agile"],
+                   ["agilite","lean"],
+                   ["alexa","alexa"],
+                   ["angular","angular"],
+                   ["architecture","architecture"],
+                   ["architecture","design"],
+                   ["architecture","pattern"],
+                   ["architecture","algorithms"],
+                   ["arduino","arduino"],
+                   ["ansible","ansible"],
+                   ["apache","apache"],
+                   ["aws","aws"],
+                   ["big-data","big-data"],
+                   ["big-data","visualization"],
+                   ["blockchain","blockchain"],
+                   ["blockchain","dart"],
+                   ["blockchain","ethereum"],
+                   ["bpmn","process"],
+                   ["bpmn","bpmn"],
+                   ["camel","camel"],
+                   ["cloud","cloud"],
+                   ["cloud","serverless"],
+                   ["coding","coding"],
+                   ["css","css"],
                    ["cucumber","cucumber"],
                    ["dark-web","dark-web"],
                    ["data-mining","mining"],
