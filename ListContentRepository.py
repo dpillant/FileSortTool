@@ -7,7 +7,7 @@ from datetime import datetime
 
 outDirectory = "C:/Users/david.pillant/Downloads/rar/"
 inDirectory= "E:/Bibliotheque/"
-programName="Sorting files"cd ..
+programName="Sorting files"
                    ["cucumber","cucumber"],
                    ["dark-web","dark-web"],
                    ["data-mining","mining"],
