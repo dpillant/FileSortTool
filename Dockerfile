@@ -1,7 +1,7 @@
 FROM python:3
 
-ADD my_script.py /
+ADD ListContentRepository.py /
 
 RUN pip install pystrich
 
-CMD [ "python", "./my_script.py" ]
+CMD [ "python", "./ListContentRepository.py" ]
